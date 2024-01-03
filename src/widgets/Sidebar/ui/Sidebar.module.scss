@@ -1,0 +1,37 @@
+.sidebar {
+	background-color: #fff;
+	border-top-right-radius: 40px;
+	bottom: 0;
+	box-shadow: 5px 20px 14px #2e37a40d;
+	height: 100vh;
+	left: 0;
+	margin-top: 0;
+	overflow-y: hidden;
+	position: fixed;
+	top: 90px;
+	transition: all 0.2s ease-in-out;
+	width: 250px;
+	z-index: 1039;
+
+	&__title {
+		color: #333;
+		font-size: 15px;
+		font-weight: 500;
+		padding: 12px 20px;
+	}
+
+	&__menu {
+		& li {
+			align-items: center;
+			color: #333548bf;
+			display: flex;
+			font-weight: 500;
+			justify-content: flex-start;
+			padding: 12px 20px;
+			position: relative;
+			transition: all 0.2s ease-in-out 0s;
+			gap: 25px;
+			font-size: 20px;
+		}
+	}
+}

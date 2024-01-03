@@ -1,0 +1,88 @@
+.navbar {
+	background: #fff;
+	box-shadow: 0 0 14px #cccccc40;
+	height: 70px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1039;
+
+	&__left {
+		float: left;
+		height: 70px;
+		padding: 0 20px;
+		position: relative;
+		text-align: center;
+		width: 220px;
+		z-index: 1;
+
+		&__logo {
+			align-items: center;
+			display: flex;
+			height: 70px;
+			justify-content: flex-start;
+
+			& span {
+				color: #2e37a4;
+				font-size: 20px;
+				font-weight: 500;
+				margin-left: 10px;
+			}
+		}
+	}
+	&__burger {
+		color: #000;
+		float: left;
+		font-size: 24px;
+		line-height: 70px;
+		padding: 0 10px;
+	}
+
+	&__search {
+		float: left;
+		margin-left: 22px;
+
+		& form {
+			margin-top: 13px;
+			position: relative;
+
+			& input {
+				background: #2e37a40d;
+				border: 0;
+				border-radius: 12px;
+				height: 40px;
+				padding: 10px 15px 10px 40px;
+			}
+
+			& span {
+				align-items: center;
+				background-color: initial;
+				border-color: #0000;
+				display: flex;
+				left: 0;
+				min-height: 45px;
+				padding: 7px 10px;
+				position: absolute;
+				top: 0;
+			}
+		}
+	}
+	&__right {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		gap: 30px;
+		padding: 10px 20px;
+		color: #2e37a4;
+
+		&__profile {
+			display: flex;
+			gap: 20px;
+
+			& img {
+				border-radius: 50%;
+			}
+		}
+	}
+}
