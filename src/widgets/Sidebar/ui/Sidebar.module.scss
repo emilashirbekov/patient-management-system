@@ -34,4 +34,24 @@
 			font-size: 20px;
 		}
 	}
+
+	&__icons {
+		align-items: center;
+		background: #2e37a40d;
+		border-radius: 8px;
+		display: flex;
+		font-size: 18px;
+		height: 40px;
+		justify-content: center;
+		-webkit-justify-content: center;
+		line-height: 18px;
+		margin-left: 0;
+		min-height: 24px;
+		transition: all 0.2s ease-in-out 0s;
+		width: 40px;
+	}
+
+	& a {
+		color: #333548bf;
+	}
 }

@@ -39,35 +39,6 @@
 		padding: 0 10px;
 	}
 
-	&__search {
-		float: left;
-		margin-left: 22px;
-
-		& form {
-			margin-top: 13px;
-			position: relative;
-
-			& input {
-				background: #2e37a40d;
-				border: 0;
-				border-radius: 12px;
-				height: 40px;
-				padding: 10px 15px 10px 40px;
-			}
-
-			& span {
-				align-items: center;
-				background-color: initial;
-				border-color: #0000;
-				display: flex;
-				left: 0;
-				min-height: 45px;
-				padding: 7px 10px;
-				position: absolute;
-				top: 0;
-			}
-		}
-	}
 	&__right {
 		display: flex;
 		align-items: center;

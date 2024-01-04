@@ -20,18 +20,7 @@ export const Navbar = () => {
 			<span className={cls.navbar__burger}>
 				<MenuIcon />
 			</span>
-			<div className={cls.navbar__search}>
-				<form>
-					<input
-						type='text'
-						className='form-control'
-						placeholder='Search here'
-					/>
-					<span>
-						<SearchIcon />
-					</span>
-				</form>
-			</div>
+
 			<ul className={cls.navbar__right}>
 				<li>
 					<EmailIcon />
