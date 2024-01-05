@@ -2,13 +2,15 @@ import { AppLink } from '@/shared/ui/AppLink/AppLink'
 import cls from './Navbar.module.scss'
 import logo from '@/shared/assets/logo.jpg'
 import MenuIcon from '@mui/icons-material/Menu'
-import SearchIcon from '@mui/icons-material/Search'
 import EmailIcon from '@mui/icons-material/Email'
 import NotificationsIcon from '@mui/icons-material/Notifications'
 import profile from '@/shared/assets/profile.jpg'
 import SettingsIcon from '@mui/icons-material/Settings'
+import MoreVertIcon from '@mui/icons-material/MoreVert'
+import { useMenu } from '@/app/providers/MenuProvider/lib/useMenu'
 
 export const Navbar = () => {
+	const { toggle } = useMenu()
 	return (
 		<nav className={cls.navbar}>
 			<div className={cls.navbar__left}>
@@ -16,11 +18,10 @@ export const Navbar = () => {
 					<img src={logo} width='35' height='35' alt='' />
 					<span>Pre Clinic</span>
 				</AppLink>
+				<span onClick={toggle} className={cls.navbar__burger}>
+					<MenuIcon />
+				</span>
 			</div>
-			<span className={cls.navbar__burger}>
-				<MenuIcon />
-			</span>
-
 			<ul className={cls.navbar__right}>
 				<li>
 					<EmailIcon />
@@ -39,6 +40,9 @@ export const Navbar = () => {
 					<SettingsIcon />
 				</li>
 			</ul>
+			<div className={cls.navbar__vertical}>
+				<MoreVertIcon style={{ fontSize: '24px' }} />
+			</div>
 		</nav>
 	)
 }

@@ -1,4 +1,7 @@
 .navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	background: #fff;
 	box-shadow: 0 0 14px #cccccc40;
 	height: 70px;
@@ -10,18 +13,20 @@
 
 	&__left {
 		float: left;
+		display: flex;
+		gap: 30px;
 		height: 70px;
 		padding: 0 20px;
 		position: relative;
 		text-align: center;
-		width: 220px;
+		width: 260px;
 		z-index: 1;
 
 		&__logo {
 			align-items: center;
 			display: flex;
 			height: 70px;
-			justify-content: flex-start;
+			justify-content: center;
 
 			& span {
 				color: #2e37a4;
@@ -37,6 +42,9 @@
 		font-size: 24px;
 		line-height: 70px;
 		padding: 0 10px;
+		@media screen and (max-width: 1024px) {
+			order: -1;
+		}
 	}
 
 	&__right {
@@ -46,6 +54,9 @@
 		gap: 30px;
 		padding: 10px 20px;
 		color: #2e37a4;
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
 
 		&__profile {
 			display: flex;
@@ -54,6 +65,13 @@
 			& img {
 				border-radius: 50%;
 			}
+		}
+	}
+
+	&__vertical {
+		margin-right: 20px;
+		@media screen and (min-width: 1024px) {
+			display: none;
 		}
 	}
 }

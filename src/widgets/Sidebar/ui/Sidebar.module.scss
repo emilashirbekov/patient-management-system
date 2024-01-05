@@ -9,9 +9,30 @@
 	overflow-y: hidden;
 	position: fixed;
 	top: 90px;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.6s ease;
 	width: 250px;
 	z-index: 1039;
+
+	@media screen and (max-width: 1024px) {
+		width: 0px;
+		transition: all 0.6s ease;
+	}
+
+	&__open {
+		background-color: #fff;
+		border-top-right-radius: 40px;
+		bottom: 0;
+		box-shadow: 5px 20px 14px #2e37a40d;
+		height: 100vh;
+		left: 0;
+		margin-top: 0;
+		overflow-y: hidden;
+		position: fixed;
+		top: 90px;
+		transition: all 0.6s ease;
+		width: 250px;
+		z-index: 1039;
+	}
 
 	&__title {
 		color: #333;
@@ -47,7 +68,7 @@
 		line-height: 18px;
 		margin-left: 0;
 		min-height: 24px;
-		transition: all 0.2s ease-in-out 0s;
+		transition: all 0.6s ease;
 		width: 40px;
 	}
 

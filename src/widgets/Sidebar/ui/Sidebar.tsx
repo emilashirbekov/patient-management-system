@@ -1,12 +1,13 @@
-import { Link } from 'react-router-dom'
+import { useMenu } from '@/app/providers/MenuProvider/lib/useMenu'
 import cls from './Sidebar.module.scss'
 import { routeItems } from '@/shared/const/routeItems'
 import { AppLink } from '@/shared/ui/AppLink/AppLink'
 import LogoutIcon from '@mui/icons-material/Logout'
 
 export const Sidebar = () => {
+	const { isOpen } = useMenu()
 	return (
-		<section className={cls.sidebar}>
+		<section className={isOpen ? cls.sidebar__open : cls.sidebar}>
 			<ul className={cls.sidebar__menu}>
 				<h3 className={cls.sidebar__title}>Main</h3>
 				{routeItems.map((el, i) => (
