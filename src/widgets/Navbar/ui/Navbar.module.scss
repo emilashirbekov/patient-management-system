@@ -42,8 +42,11 @@
 		font-size: 24px;
 		line-height: 70px;
 		padding: 0 10px;
-		@media screen and (max-width: 1024px) {
+		@media screen and (max-width: 1025px) {
 			order: -1;
+		}
+		@media screen and (min-width: 1025px) {
+			display: none;
 		}
 	}
 

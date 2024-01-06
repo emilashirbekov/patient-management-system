@@ -1,9 +1,11 @@
 import { homeCardItems } from '@/shared/const/homeCardItems'
 import cls from './Home.module.scss'
+import { useMenu } from '@/app/providers/MenuProvider/lib/useMenu'
 
 export const Home = () => {
+	const { isOpen } = useMenu()
 	return (
-		<section className={cls.home}>
+		<section className={isOpen ? cls.home__blur : cls.home}>
 			<div className={cls.home__container}>
 				<div className={cls.home__card}>
 					<div className={cls.home__card__text}>
